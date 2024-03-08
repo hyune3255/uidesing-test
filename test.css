@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+.mom{
+  height: 2000px;
+}
+header{
+  height: 91vh;
+  width: 100vw;
+  background: black;
+}
+.header-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+h2{
+  color: white;
+  margin: 0;
+}
+.h2-text{
+  font-size: 1rem;
+  font-weight: normal;
+}
+.video-container{
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blive_iframe{
+  width: 80%;
+  height: 80%;
+  border: 0;
+
+}
+.header-nav{
+  position: sticky;
+  top: 0;
+  z-index: 25;
+  background: black;
+ 
+}
+.nav{
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  padding-left: 0;
+  background-color: #424141;
+  width: 70%;
+  padding: 20px;
+  background-color: rgba(255,255,192,0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 2px 7px 15px 8px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+.nav-list{
+  list-style: none;
+  color: #8c8c8c;
+  font-size: 1rem;
+  line-height: 1.2;
+  
+}
+
+main{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 250vh;
+  background: #111;
+}
+.main-text2, .lookbook{
+  color: white;
+  font-size: 18px;
+  padding: 30px;
+}
+h3{
+  margin: 0;
+  color: white;
+  font-size: 24px;
+  padding-top: 20px;
+}
+.main-text{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main img{
+  width: 10%;
+  font-size: 16px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.main-h2{
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 10px;
+}
+.lookbook{
+  margin: 0 auto;
+}
+
+.container1{
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-column-gap: .625rem;
+  grid-row-gap: .625rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-auto-columns: 1fr;
+
+}
+.item-img{
+  width: 100%;
+  height: 100%;
+  
+  vertical-align: middle;
+  border: 0;
+  cursor: pointer;
+}
+.container1 div{
+}
+.item{
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  font-size: 18px;
+}
+.text-container{
+  width: 100%;
+  padding: 20px;
+}
+.text-box{
+  width: 20%;
+  margin: 0 auto;
+  border: .0625rem solid white;
+  text-align: center;
+  letter-spacing: 1px;
+  
+  min-width: 20.5rem;
+}
+.textbox{
+  color: white;
+  line-height: bold;
+}
+.line{
+  display: flex;
+  border-bottom: .1px solid rgb(77, 74, 74);
+  width: 60%;
+  margin: 0 auto;
+}
