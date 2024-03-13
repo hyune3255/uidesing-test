@@ -1,0 +1,70 @@
+let nav = document.querySelector('.nav')
+let list = document.querySelector('.nav-list')
+let flag = false 
+
+nav.addEventListener('mouseover', function(e){
+    e.target.style.color = "white"
+})
+
+nav.addEventListener("mouseout", function(e){
+    e.target.style.color = "#8c8c8c"
+})
+
+
+document.querySelector('.nav-list').addEventListener('click', function(){
+    document.querySelector('.h2-text').scrollIntoView({behavior:'smooth',block :'center'});
+})
+document.querySelector('.nav-list1').addEventListener('click', function(){
+    document.querySelector('.lookbook').scrollIntoView({behavior:'smooth',block :'start'});
+})
+document.querySelector('.nav-list2').addEventListener('click', function(){
+    document.querySelector('.shopbox1').scrollIntoView({behavior:'smooth',block :'start'});
+})
+document.querySelector('.nav-list3').addEventListener('click', function(){
+    document.querySelector('.shopbox2').scrollIntoView({behavior:'smooth',block :'start'});
+})
+
+const container2 = document.querySelector('.container2');
+
+let n = 6
+function createitem(n){
+    for (let i = 0; i < n; i++) {
+        const img = new Image();
+        img.src = `/imgs/model-${i+1}.jpg`;
+        img.style.height ='100%' 
+        img.style.width ='100%' 
+        img.style.cursor ='pointer';
+        container2.appendChild(img);      
+    };    
+}
+createitem(n);
+
+
+function 작동할함수(){
+    let n
+    container2.innerHTML = ' ' ;
+    
+    const moreBtn = document.querySelector('.textbox')
+    const moreBtn1 = document.querySelector('.text-box')
+    
+    console.log("닫기")
+
+    if(!flag){
+        moreBtn.innerHTML = 'CLOSE'
+        moreBtn1.style.position = 'fixed'
+        moreBtn1.style.bottom = '50px'
+        moreBtn1.style.left = '50%'
+        moreBtn1.style.transform = 'translate(-50%)'
+        flag = true 
+        n = 65
+    }else{
+        moreBtn.innerHTML = 'SEE ALL THE LOOKS'
+        moreBtn1.style.position = 'static'    
+        moreBtn1.style.transform = 'translate(-5%, 0%)'
+        flag = false 
+        n = 6
+    }
+    createitem(n);
+}
+
+document.querySelector('.text-box').addEventListener('click', 작동할함수)
