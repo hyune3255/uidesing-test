@@ -68,3 +68,15 @@ function 작동할함수(){
 }
 
 document.querySelector('.text-box').addEventListener('click', 작동할함수)
+
+
+
+
+document.querySelector('.next').addEventListener('click', function(){
+    document.querySelector('.cdbox').style.transform = 'transLateX(-100vw)'
+  })
+  document.querySelector('.before').addEventListener('click', function(){
+    document.querySelector('.cdbox').style.transform = 'transLateX(0vw)'
+  })
+
+
