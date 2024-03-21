@@ -6,7 +6,7 @@ body {
 }
 header{
   height: 92vh;
-  width: 100vw;
+  width: 100%;
   z-index: 10;
 }
 .header-text{
@@ -75,7 +75,7 @@ h2{
 main{
   margin: 0;
   padding: 0;
-  width: 100vw;
+  width: 100%;
   background: #111;
 }
 .main-text2, .lookbook{
@@ -156,7 +156,7 @@ main img{
 }
 .text-container{
   width: 100%;
-  padding: 20px;
+  padding-top: 20px;
 }
 .text-box{
   width: 20%;
@@ -171,12 +171,48 @@ main img{
   line-height: bold;
 }
 
+
 .creditbox{
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
 }
+.cdcontainer{
+  overflow: hidden;
+}
+.cdbox{
+  width: 200vw;
+  display: flex;
+  overflow: hidden;
+  
+}
+.cdbox2{
+  width: 100vw;
+  display: grid;
+  grid-column-gap: .625rem;
+  grid-row-gap: .625rem;
+  grid-template-columns: repeat(2,20rem);
+  justify-content: center;
+  align-items: center;
+}
+
+.cdtext{
+  font-size: 10px;
+  color: #8c8c8c;
+}
+.cdtext2{
+  font-size: 18px;
+  color: white;
+}
+.nextbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .shop1{
   width: 100%;
 }
@@ -220,11 +256,11 @@ main img{
 }
 @media (max-width: 768px){
   .shopbox1{
-    background-image: url(/imgs/2.jpg);
+    background-image: url(https://assets-global.website-files.com/5f730b75b866943279290618/613101b5ddd1b55cff83c0e2_MISC_IMAGES_RUNWAY_D.jpg);
     z-index: 5;
   }
   .shopbox2{
-    background-image: url(/imgs/4.jpg);
+    background-image: url(https://assets-global.website-files.com/5f730b75b866943279290618/62045fdc1d15b14a25d15e42_MISC_IMAGES_RUNWAY_M-p-800.jpeg);
     z-index: 5;
   }
 }
